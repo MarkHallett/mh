@@ -3,6 +3,9 @@
 eg code
 '''
 
+
+import mhlib.eg
+
 EG_VAR='ABCD'
 
 def testFunction():
@@ -18,3 +21,9 @@ class Mh (object):
         return 100
 
 
+if __name__ == '__main__':
+    print ('ok')
+    print (EG_VAR)
+    print (dir(mhlib.eg))
+    print (mhlib.eg.EG_VAR)
+    print ('Done')
