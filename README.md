@@ -1,5 +1,13 @@
 # Example Package
 
-This is a simple example package. You can use
-[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-to write your content.
+## To show 
+* package distirbution
+* package testing (unit, integration and acceptance)
+
+## Usage
+To install, `pip install mh`<br /> 
+To import `import mh`<br /> 
+Example usage   
+`print mh.EG_VAR2`<br /> 
+`print mh.testFunction()`<br /> 
+`print mh.Mh().runMh()`<br /> 
