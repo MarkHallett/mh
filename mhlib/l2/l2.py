@@ -3,6 +3,8 @@
 l2 code
 '''
 
+import time
+
 L2EG_VAR='efgh'
 
 def L2Test():
@@ -10,7 +12,14 @@ def L2Test():
     return 'ok'
 
 class L2Mh (object):
-    def runMh(self):
-        print ('ok run')
+    def run(self):
         return 10
+
+    def slow(self):
+        t = 5
+        time.sleep(t)
+        return t
+
+
+
 
