@@ -1,33 +1,19 @@
-# mh.py
+# mh/__ini__.py
 '''
 eg code to start a project with.
-Seen with mh.__doc__
+import mh
+To see use mh.__doc__
 Can also be seen with help(mh)
+And dir(mh)
+and mh.__version__
 '''
 
+__version__ = '0.0.23'
 
-import mhlib.eg
+import mh.mh as mh
 
-EG_VAR='ABCD'
+# define mh api
 
-def testFunction():
-    ''' returns a test string.'''
-
-    return 'OK'
-
-
-class Mh (object):
-    ''' Eg class.
-
-    Longer descripton of what the class does
-    '''
-
-    def runMh(self):
-        ''' Eg class function. '''
-
-        print ('OK RUN')
-        return 100
-
-
-if __name__ == '__main__':
-    print ('Done')
+EG_VAR2=mh.EG_VAR
+testFunction = mh.testFunction
+Mh = mh.Mh
