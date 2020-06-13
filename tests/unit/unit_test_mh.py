@@ -9,12 +9,13 @@ src_path =  os.path.abspath(os.path.join(testdir, srcdir))
 sys.path.insert(0, os.path.abspath(src_path))
 
 
+import sys
 import unittest
 import mh
 
 class TestMh(unittest.TestCase):
     def test_var(self):
-         self.assertEqual(mh.EG_VAR2, 'ABCD_mh')
+         self.assertEqual(mh.EG_VAR2, 'ABCD')
 
     def test_func(self):
         self.assertEqual(mh.testFunction(), 'OK')
@@ -22,6 +23,8 @@ class TestMh(unittest.TestCase):
     def test_class(self):
         x = mh.Mh()
         x.runMh()
+        self.assertEqual(100, x.runMh() )
 
 if __name__ == '__main__':
+    print (sys.version)
     unittest.main()

@@ -1,3 +1,4 @@
+# run with: behave mh.feature
 
 Feature: testing mh
 

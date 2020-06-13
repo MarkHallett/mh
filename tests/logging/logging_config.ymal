@@ -1,0 +1,78 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+  simple:
+    format: "%(asctime)s {%(filename)s:%(lineno)d} %(levelname)s - %(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+
+loggers:
+  __main__:
+    level: DEBUG
+    handlers: [ console, info_file_handler, error_file_handler]
+    propagate: no
+  mh:
+    handlers: [ console, info_file_handler, error_file_handler, mh_handler ]
+    level: DEBUG
+    propagate: no
+  lib1:
+    handlers: [ console, info_file_handler, error_file_handler]
+    level: INFO
+    propagate: no
+  lib2:
+    level: DEBUG
+    handlers: [ lib2_handler ]
+  lib3:
+    level: ERROR
+    handlers: [ console, error_file_handler]
+    propagate: no
+
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: simple
+    stream: ext://sys.stdout
+
+  info_file_handler:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: INFO
+    formatter: simple
+    filename: logs/info.log
+    when: M
+    interval: 1
+    backupCount: 5
+    encoding: utf8
+
+  error_file_handler:
+    class: logging.handlers.RotatingFileHandler
+    level: ERROR
+    formatter: simple
+    filename: logs/errors.log
+    maxBytes: 10485760 # 10MB
+    backupCount: 20
+    encoding: utf8
+
+  lib2_handler:
+    class: logging.handlers.TimedRotatingFileHandler
+    when: M
+    interval: 1
+    level: DEBUG
+    formatter: simple
+    filename: logs/lib2.log
+    backupCount: 2
+    encoding: utf8
+
+  mh_handler:
+    class: logging.handlers.TimedRotatingFileHandler
+    when: M
+    interval: 1
+    level: DEBUG
+    formatter: simple
+    filename: logs/mh.log
+    backupCount: 2
+    encoding: utf8
+
+root:
+  level: INFO
+  handlers: [ console, info_file_handler, error_file_handler, mh_handler ]

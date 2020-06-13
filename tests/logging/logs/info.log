@@ -1,0 +1,9 @@
+2020-06-13 21:29:12 {eg_app.py:18} INFO - START
+2020-06-13 21:29:12 {eg_app.py:22} ERROR - eg
+Traceback (most recent call last):
+  File "eg_app.py", line 20, in <module>
+    1/0
+ZeroDivisionError: division by zero
+2020-06-13 21:29:12 {eg_app.py:25} INFO - <module 'mh' from '../../../src/mh/__init__.py'>
+2020-06-13 21:29:12 {eg_app.py:26} INFO - 0.0.24
+2020-06-13 21:29:12 {mh.py:29} INFO - OK fo far

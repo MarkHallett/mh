@@ -18,28 +18,19 @@ from  mhlib.l2 import l2
 
 
 def test():
-    print ('-'*20)
-    print ('mh', mh.__version__)
-    print ('-'*10)
-    print ('file',mh)
-    print ('doc',mh.__doc__)
-    print ('dir',dir(mh))
+    print ('#'*40)
+    print ('file under test:', mh)
+    print ('version:', mh.__version__)
+    print ('doc:', mh.__doc__)
+    print ('dir:', dir(mh))
     print ('.'*10)
-    print ('mh api')
-    print (mh.EG_VAR2)
-    print (mh.testFunction() )
-    mh.Mh().runMh()
-
+    print ('file under test:', eg)
+    print ('doc:', eg.__doc__)
+    print ('dir:', dir(eg))
     print ('.'*10)
-    print ('eg api')
-    print (eg)
-    print (eg.EG_VAR)
-
-    print ('.'*10)
-    print ('eg l2')
-    print (l2)
-    dir (l2)
-    print (l2.L2EG_VAR)
+    print ('file under test:', l2)
+    print ('doc:', l2.__doc__)
+    print ('dir:', dir(l2))
 
 
 if __name__ == '__main__':
