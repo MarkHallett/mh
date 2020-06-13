@@ -1,0 +1,5 @@
+2020-06-13 21:29:12 {eg_app.py:22} ERROR - eg
+Traceback (most recent call last):
+  File "eg_app.py", line 20, in <module>
+    1/0
+ZeroDivisionError: division by zero

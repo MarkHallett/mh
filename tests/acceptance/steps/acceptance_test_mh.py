@@ -38,7 +38,7 @@ def step_impl(context):
 
 @then('we get the correct value')
 def step_impl(context):
-    assert (context.v == 'ABCD_mh')
+    assert (context.v == 'ABCD')
 
 # -----------------------------------------
 @when('we call a mh function')
