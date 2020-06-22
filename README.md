@@ -2,7 +2,9 @@
 
 ## To show 
 * package distribution
-* package testing (unit, integration and acceptance)
+* package testing (unit, performance, acceptance and multi interpreter)
+* logging use
+* loading to pypi
 <br /> 
 
 ## Usage
@@ -16,4 +18,7 @@ Example usage
 <br /> 
 
 ## To run tests  
-`python -m unittest `<br /> 
+unit `python -m unittest `<br /> 
+performance 'cd tests/performance; python test_perf.py'
+acceptance 'cd tests/acceptance; behave mh.feature'
+multi interpreter 'tox'
