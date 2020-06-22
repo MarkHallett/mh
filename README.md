@@ -1,7 +1,7 @@
 # Example Package
 
 ## To show 
-* package distirbution
+* package distribution
 * package testing (unit, integration and acceptance)
 <br /> 
 
