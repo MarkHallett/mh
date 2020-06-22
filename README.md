@@ -19,6 +19,6 @@ Example usage
 
 ## To run tests  
 unit `python -m unittest `<br /> 
-performance 'cd tests/performance; python test_perf.py'
-acceptance 'cd tests/acceptance; behave mh.feature'
-multi interpreter 'tox'
+performance `cd tests/performance; python test_perf.py`<br /> 
+acceptance `cd tests/acceptance; behave mh.feature`<br /> 
+multi interpreter `tox`<br /> 
