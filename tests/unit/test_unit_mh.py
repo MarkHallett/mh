@@ -27,4 +27,5 @@ class TestMh(unittest.TestCase):
 
 if __name__ == '__main__':
     print (sys.version)
+    print (mh)
     unittest.main()
