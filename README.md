@@ -13,5 +13,6 @@ Example usage
 * `print mh.EG_VAR2`<br /> 
 * `print mh.testFunction()`<br /> 
 * `print mh.Mh().runMh()`<br /> 
-To run tests  
-* `python -m unittest `<br /> 
+<br /> 
+## To run tests  
+`python -m unittest `<br /> 
