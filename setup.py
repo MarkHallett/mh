@@ -13,7 +13,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/markhallett/mh",
-    packages=find_packages(),
+    packages=find_packages('src'),
     #packages=[],
     py_modules=["mh"],
     package_dir={'':'src'},
