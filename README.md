@@ -8,7 +8,9 @@
 <br /> 
 
 ## Usage
-To install, `pip install mh`<br /> 
+To install, either <br />
+`pip install mh`<br /> 
+`pip install git+https://github.com/MarkHallett/mh@v0.0.24` <br />
 To import `import mh`<br /> 
 <br /> 
 Example usage   
