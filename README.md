@@ -11,7 +11,9 @@
 To install, either <br />
 `pip install mh`<br /> 
 `pip install git+https://github.com/MarkHallett/mh@v0.0.24` <br />
-To import `import mh`<br /> 
+<br />
+To import <br />
+`import mh`<br /> 
 <br /> 
 Example usage   
 * `print mh.EG_VAR2`<br /> 
