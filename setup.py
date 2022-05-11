@@ -13,6 +13,9 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/markhallett/mh",
+    project_urls={
+        "Documentation": "https://ghttps://markhallett.github.io/mh",
+    },
     packages=find_packages('src'),
     #packages=[],
     py_modules=["mh"],
