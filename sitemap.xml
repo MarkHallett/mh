@@ -6,7 +6,42 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://mh.github.io/changelog/</loc>
+         <lastmod>2022-05-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://mh.github.io/credits/</loc>
+         <lastmod>2022-05-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mh.github.io/install/</loc>
+         <lastmod>2022-05-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mh.github.io/issues/</loc>
+         <lastmod>2022-05-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mh.github.io/license/</loc>
+         <lastmod>2022-05-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mh.github.io/todo/</loc>
+         <lastmod>2022-05-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mh.github.io/troubleshooting/</loc>
+         <lastmod>2022-05-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mh.github.io/usage/</loc>
          <lastmod>2022-05-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
