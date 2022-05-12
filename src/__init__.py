@@ -8,7 +8,7 @@ And dir(mh)
 and mh.__version__
 '''
 
-__version__ = '0.0.24'
+__version__ = '0.0.29'
 
 import mh.mh as mh
 

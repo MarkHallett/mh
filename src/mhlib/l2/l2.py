@@ -12,10 +12,14 @@ def L2Test():
     return 'ok'
 
 class L2Mh (object):
+    """Example l2 class """
+
     def run(self):
+        """Eg function"""
         return 10
 
     def slow(self):
+        """Eg function"""
         t = 5
         time.sleep(t)
         return t
