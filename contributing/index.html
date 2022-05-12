@@ -797,6 +797,8 @@
   <h1>Contributing</h1>
 
 <p>All welcome</p>
+<p>!!! example "Example: setup Django before collecting documentation" yaml # mkdocs.yml plugins: - mkdocstrings: handlers: python: setup_commands: - import os - import django - os.environ.setdefault("DJANGO_SETTINGS_MODULE", "my_django_app.settings") - django.setup()</p>
+<p>!!! important Additional options like setup_commands are used only once, when instantiating the handler the first time it is requested. This is why they are considered global-only options, as they will have no effect if used as local options.</p>
 
               
             </article>
