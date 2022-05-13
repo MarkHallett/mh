@@ -26,7 +26,7 @@ class MhEg (object):
 
 
     def call_external_func(self):
-         '''no documentation'''
+        '''no documentation'''
         x = l2.L2Mh()
         y = x.slow()
         return y
