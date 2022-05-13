@@ -1,9 +1,6 @@
 # mh.py
-''' eg code to start a project with.
-Seen with mh.__doc__
-Can also be seen with help(mh)
+'''eg code to start a project with.
 '''
-
 
 import logging
 import mhlib.eg
@@ -15,17 +12,15 @@ logger = logging.getLogger(__name__)
 EG_VAR='ABCD'
 
 def testFunction():
-    ''' returns a test string.'''
+    '''an example function that returns a string'''
     return 'OK'
 
 
 class Mh (object):
-    ''' Eg class.
-    Longer descripton of what the class does
-    '''
+    '''an example class '''
 
     def runMh(self):
-        ''' Eg class function. '''
+        '''an example member function'''
         logger.info('OK fo far')
         return 100
 
