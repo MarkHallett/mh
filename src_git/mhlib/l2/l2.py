@@ -1,29 +1,25 @@
-# l2.py
-'''
-l2 code
-'''
+'''Documentation for l2.py...'''
 
 import time
 
 L2EG_VAR='efgh'
 
+
 def L2Test():
-    ''' returns a test string '''
+    '''L2 test funtion'''
     return 'ok'
 
+
 class L2Mh (object):
-    """Example l2 class """
+    """class L2Mh documentation"""
 
     def run(self):
-        "Eg function""
+        """No documentation"""
         return 10
 
     def slow(self):
-        "Eg function""
+        """No documentation"""
         t = 5
         time.sleep(t)
         return t
-
-
-
 

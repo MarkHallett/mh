@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="mh",
-    version="0.0.24",
+    version="0.0.30",
     author="Mark Hallett",
     author_email="mh@markhallett.co.uk",
     description="A small example package",
@@ -14,7 +14,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/markhallett/mh",
     project_urls={
-        "Documentation": "https://ghttps://markhallett.github.io/mh",
+        "Documentation": "https://markhallett.github.io/mh",
     },
     packages=find_packages('src'),
     #packages=[],
