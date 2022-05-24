@@ -1,0 +1,113 @@
+site_name: "mh"
+site_description: "Simple example of a basic pip package."
+site_url: "https://mh.github.io/"
+repo_url: "https://github.com/MarkHallett/mh"
+edit_uri: "blob/master/docs/"
+repo_name: "MarkHallett/mh"
+site_dir: "site"
+
+nav:
+- Home:
+  - Overview: index.md
+  - Changelog: changelog.md
+  - Credits: credits.md
+  - License: license.md
+- Usage:
+  - usage.md
+  - pip package: https://pypi.org/project/mh
+  - install: install.md
+  - links:
+    #- links: links.md
+    - github: https://github.com/MarkHallett/mh
+    - issues: issues.md
+  - Troubleshooting: troubleshooting.md
+# defer to gen-files + literate-nav
+- Code Reference: reference/
+- Development:
+  - development.md
+  - Contributing: contributing.md
+  - Code of Conduct: code_of_conduct.md
+  - Coverage report: todo.md
+#- Author's website: https://pawamoy.github.io/
+
+theme:
+  name: material
+  logo: logo.svg
+  features:
+  - content.code.annotate
+  - navigation.tabs
+  - navigation.top
+  palette:
+  - media: "(prefers-color-scheme: light)"
+    nscheme: default
+    primary: teal
+    accent: purple
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: black
+    accent: lime
+    toggle:
+      icon: material/weather-night
+      name: Switch to light mode
+
+extra_css:
+- css/style.css
+- css/material.css
+- css/mkdocstrings.css
+
+markdown_extensions:
+- admonition
+- pymdownx.details
+- pymdownx.emoji
+- pymdownx.magiclink
+- pymdownx.snippets:
+    check_paths: true
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.tasklist
+- toc:
+    permalink: "¤"
+
+plugins:
+- search
+- gen-files:
+    scripts:
+    #- docs/gen_credits.py
+    #- docs/gen_ref_nav.py
+    - docs/gen_redirects.py
+    - docs/gen_ref_pages.py
+- literate-nav:
+    nav_file: SUMMARY.md
+- coverage
+- section-index
+- mkdocstrings:
+    handlers:
+      python:
+        import:
+        - https://docs.python.org/3/objects.inv
+        - https://docs.python-requests.org/en/master/objects.inv  # demonstration purpose in the docs
+        - https://mkdocstrings.github.io/autorefs/objects.inv
+        options:
+          docstring_style: google
+          docstring_options:
+            ignore_init_summary: yes
+          merge_init_into_class: yes
+          show_submodules: yes
+    watch:
+    - src
+
+
+extra:
+  social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/markhallett/mh
+  - icon: fontawesome/brands/python
+    link: https://pypi.org/project/mh/
+  - icon: fontawesome/brands/linkedin
+    link: https://www.linkedin.com/in/mark-hallett-a5a1b911/
+  - icon: fontawesome/brands/gitter
+    link: https://gitter.im/mh-package/community
