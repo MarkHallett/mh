@@ -1,0 +1,27 @@
+import unittest
+
+# Use local src for testing
+import os
+import sys
+testdir = os.getcwd()
+srcdir = '../src'
+src_path =  os.path.abspath(os.path.join(testdir, srcdir))
+sys.path.insert(0, os.path.abspath(src_path))
+
+import mh
+
+
+class MhTestCase(unittest.TestCase):
+    def test_var(self):
+        self.assertEqual(mh.EG_VAR2, 'ABCD')  # add assertion here
+
+    def test_function(self):
+        self.assertEqual(mh.testFunction(), 'OK')  # add assertion here
+
+    def test_class(self):
+        my_mh = mh.Mh()
+        self.assertEqual(my_mh.runMh(), 100)  # add assertion here
+
+
+if __name__ == '__main__':
+    unittest.main()
