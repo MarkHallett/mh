@@ -8,10 +8,10 @@ import mhlib.eg
 
 logger = logging.getLogger(__name__)
 
-
 EG_VAR='ABCD'
 
-def testFunction():
+
+def testFunction() -> None:
     '''an example function that returns a string'''
     return 'OK'
 
@@ -19,7 +19,7 @@ def testFunction():
 class Mh (object):
     '''an example class '''
 
-    def runMh(self):
+    def runMh(self) -> int:
         '''an example member function'''
         logger.info('OK fo far')
         return 100

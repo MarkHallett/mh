@@ -9,17 +9,17 @@ from mhlib.l2 import l2
 EG_VAR='abcd'
 
 def test():
-    '''example intenal function'''
-    return 'ok'
+    '''example internal function'''
+    return 'ok1'
 
 class MhEg (object):
     '''example intenal class'''
     def runMhEg(self):
-        '''example member function of an intenal class'''
+        '''example member function of an internal class'''
         return 10
 
     def slow(self):
-        '''no documentation'''
+        '''An example slow function.'''
         t = 3
         time.sleep(t)
         return
@@ -32,7 +32,5 @@ class MhEg (object):
         return y
 
 
-
 if __name__ == '__main__':
     pass
-
