@@ -44,4 +44,6 @@ class TestL2Class(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    print (mh)
+    print (f"{mh.__version__=}")
     unittest.main()

@@ -13,15 +13,17 @@ import mh
 
 class MhTestCase(unittest.TestCase):
     def test_var(self):
-        self.assertEqual(mh.EG_VAR2, 'ABCD')  # add assertion here
+        self.assertEqual(mh.EG_VAR2, 'ABCD')
 
     def test_function(self):
-        self.assertEqual(mh.testFunction(), 'OK')  # add assertion here
+        self.assertEqual(mh.testFunction(), 'OK')
 
     def test_class(self):
         my_mh = mh.Mh()
-        self.assertEqual(my_mh.runMh(), 100)  # add assertion here
+        self.assertEqual(my_mh.runMh(), 100)
 
 
 if __name__ == '__main__':
+    print (mh)
+    print (f"{mh.__version__=}")
     unittest.main()
