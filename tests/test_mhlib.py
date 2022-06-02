@@ -1,13 +1,5 @@
 import unittest
 
-# Use local src for testing
-import os
-import sys
-testdir = os.getcwd()
-srcdir = '../src'
-src_path =  os.path.abspath(os.path.join(testdir, srcdir))
-sys.path.insert(0, os.path.abspath(src_path))
-
 from mhlib import eg, l2
 
 
@@ -18,7 +10,7 @@ class MhTestCase(unittest.TestCase):
 
     def test_internal_func2(self):
         my_x = eg.MhEg()
-        self.assertEqual(my_x.runMhEg(), 10)
+        self.assertEqual(my_x.run_mh_eg(), 10)
 
     def test_internal_func3(self):
         my_x = eg.MhEg()
@@ -33,7 +25,7 @@ class TestTestFunction(unittest.TestCase):
 class TestL2(unittest.TestCase):
     def test_internal_func(self):
         self.assertEqual(l2.l2.L2EG_VAR, 'efgh')
-        self.assertEqual(l2.l2.L2Test(), 'ok2')
+        self.assertEqual(l2.l2.l2_test(), 'ok2')
 
 
 class TestL2Class(unittest.TestCase):
@@ -44,6 +36,4 @@ class TestL2Class(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    print (mh)
-    print (f"{mh.__version__=}")
     unittest.main()

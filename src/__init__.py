@@ -1,4 +1,1 @@
-'''
-Documentation regarding the mh package...
-'''
-
+"""Documentation regarding the mh package. """

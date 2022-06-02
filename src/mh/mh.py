@@ -1,6 +1,5 @@
-# mh.py
-'''eg code to start a project with.
-'''
+"""Eg code to start a project with."""
+
 
 import logging
 import mhlib.eg
@@ -8,19 +7,19 @@ import mhlib.eg
 
 logger = logging.getLogger(__name__)
 
-EG_VAR='ABCD'
+EG_VAR = 'ABCD'
 
 
-def testFunction() -> None:
-    '''an example function that returns a string'''
+def test_function() -> str:
+    """An example function that returns a string."""
     return 'OK'
 
 
 class Mh (object):
-    '''an example class '''
+    """An example class."""
 
-    def runMh(self) -> int:
-        '''an example member function'''
+    def run_mh(self) -> int:
+        """An example member function."""
         logger.info('OK fo far')
         return 100
 
@@ -31,8 +30,7 @@ if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO,
                         format='%(asctime)s {%(filename)s:%(lineno)d} %(levelname)s - %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S',
-                        # filename='lib1.log',
                         )
-    Mh().runMh()
+    Mh().run_mh()
 
     logger.info('Done')

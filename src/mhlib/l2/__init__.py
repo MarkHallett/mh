@@ -1,1 +1,1 @@
-'''Description for l2 ...'''
+"""Description for l2."""

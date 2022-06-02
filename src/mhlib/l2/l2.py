@@ -1,12 +1,12 @@
-'''Documentation for l2.py...'''
+"""Documentation for l2.py."""
 
 import time
 
-L2EG_VAR='efgh'
+L2EG_VAR = 'efgh'
 
 
-def L2Test() -> str:
-    '''L2 test funtion'''
+def l2_test() -> str:
+    """L2 test function."""
     return 'ok2'
 
 
