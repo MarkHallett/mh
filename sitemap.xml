@@ -51,6 +51,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://mh.github.io/tests/</loc>
+         <lastmod>2022-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://mh.github.io/todo/</loc>
          <lastmod>2022-06-04</lastmod>
          <changefreq>daily</changefreq>
